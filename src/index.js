@@ -21,7 +21,7 @@
 /**
  * App ID for the skill
  */
-var APP_ID = amzn1.echo-sdk-ams.app.c4b269b4-7140-4e34-b05f-9dd16827582d; 
+var APP_ID = "amzn1.echo-sdk-ams.app.6f97ae95-04de-4dbb-b5e4-42c967543876";
 
 /**
  * Array containing cat facts.
@@ -29,13 +29,13 @@ var APP_ID = amzn1.echo-sdk-ams.app.c4b269b4-7140-4e34-b05f-9dd16827582d;
 var CAT_FACTS = [
     "Cats sleep for an average of 13 to 14 hours a day. That means a nine-year-old cat has been awake for only three years of its life.",
     "There are 36 species of cats.",
-    "The technical term for a cat’s hairball is a bezoar.",
+    "The technical term for a cat's hairball is a bezoar.",
 	"A group of cats is called a clowder.",
 	"Female cats tend to be right pawed, while male cats are more often left pawed.",
 	"A cat usually has about 12 whiskers on each side of its face.",
 	"A cat almost never meows at another cat, mostly just humans. Cats typically will spit, purr, and hiss at other cats.",
 	"Cats have nearly 30 individual bones in their tails and use them for balance.",
-	"There are abou t100 distinct breeds of domestic cat.",
+	"There are about 100 distinct breeds of domestic cat.",
 	"Calico and tortiseshell cats are almost always female because the genes for the coloring are on the X chromosome.",
 	"Cats can't taste sweet things.",
 	"The cheetah is the only cat in the world that can't retract it's claws.",
@@ -92,7 +92,7 @@ CatFacts.prototype.intentHandlers = {
     },
 
     "AMAZON.HelpIntent": function (intent, session, response) {
-        response.ask("You can ask CatFacts tell me a cat fact, or, you can say exit... What can I help you with?", "What can I help you with?");
+        response.ask("You can ask Cat Facts tell me a cat fact, or, you can say exit... What can I help you with?", "What can I help you with?");
     },
 
     "AMAZON.StopIntent": function (intent, session, response) {
@@ -123,7 +123,7 @@ function handleNewFactRequest(response) {
 // Create the handler that responds to the Alexa Request.
 exports.handler = function (event, context) {
     // Create an instance of the CatFacts skill.
-    var CatFacts = new CatFacts();
-    CatFacts.execute(event, context);
+    var catFacts = new CatFacts();
+    catFacts.execute(event, context);
 };
 
