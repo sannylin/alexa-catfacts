@@ -58,8 +58,8 @@ var CAT_FACTS = [
     "Cat Fact! Only about 50 percent of cats react to catnip.",
     "Cat Fact! White cats with blue eyes are more likely to be deaf.",
     "Cat Fact! Wild cats rarely drink water because they get most of their water from their prey.",
-    "Cat Fact! Cats were first introduced to the Americas in 1498 on the Santo Domingo.".
-    "Cat Fact! Tokyo has about 60 cat cafes.",
+    "Cat Fact! Cats were first introduced to the Americas in 1498 on the Santo Domingo.",
+    "Cat Fact! Tokyo has about 60 cat cafes."
 ];
 
 /**
